@@ -9,13 +9,13 @@ int strokeWeight = 3;
 
 void setup()
 {
-  size(300,300);
+  size(600,600);
   background(0);
 }
 void draw()
 {
   stroke((int)(Math.random()*256), (int)(Math.random() * 256), (int)(Math.random() * 256));
-  while(endX <= 300){
+  while(endX <= 600){
     strokeWeight(strokeWeight);
     endX = startX + (int)(Math.random() * 10);
     endY = startY + (int)(Math.random() * 19) - 9;
