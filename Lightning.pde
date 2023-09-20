@@ -1,36 +1,35 @@
 import java.util.Random;
 
-int startX = 0;
-int startY = 150;
-int endX = 0;
-int endY = 150;
-int strokeWeight = 3;
+int startX = mouseX;
+int startY = mouseY;
+int endX = startX;
+int endY = startY;
+int strokeWeight = 10;
 
 
 void setup()
 {
   size(600,600);
-  background(0);
 }
 void draw()
-{
-  stroke((int)(Math.random()*256), (int)(Math.random() * 256), (int)(Math.random() * 256));
-  while(endX <= 600){
+{  
+  background(0);
+  stroke((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256));
+  while(endY <= 600){
     strokeWeight(strokeWeight);
-    endX = startX + (int)(Math.random() * 10);
-    endY = startY + (int)(Math.random() * 19) - 9;
+    //the lightning starts at the mouse when clicked and ends whenever it reaches the bottom of the window
+    endX = startX + (int)(Math.random() * 31) - 15;
+    endY = startY + (int)(Math.random() * 11);
     line(startX, startY, endX, endY);
     startX = endX;
     startY = endY;
-    strokeWeight += 1;
   }
-  mousePressed();
+  
 }
 void mousePressed()
 {
-  startX = 0;
-  startY = 150;
-  endX = 0;
-  endY = 150;
-  strokeWeight = 3;
+  startX = mouseX;
+  startY = mouseY;
+  endX = startX;
+  endY = startY;
 }
