@@ -14,7 +14,7 @@ void setup()
 }
 void draw()
 {  
-  //background(0);
+  background(0);
   stroke((int)(Math.random() * 256), (int)(Math.random() * 256), (int)(Math.random() * 256));
   while(endY <= 600){
     strokeWeight(strokeWeight);
