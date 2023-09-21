@@ -1,15 +1,16 @@
 //import java.util.Random;
 
-int startX = mouseX;
-int startY = mouseY;
-int endX = startX;
-int endY = startY;
-int strokeWeight = 10;
+
 
 
 void setup()
 {
   size(600,600);
+  int startX = mouseX;
+  int startY = mouseY;
+  int endX = startX;
+  int endY = startY;
+  int strokeWeight = 10;
 }
 void draw()
 {  
