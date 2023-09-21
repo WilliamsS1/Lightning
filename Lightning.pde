@@ -26,7 +26,7 @@ void draw()
   }
   
 }
-void mouseClicked()
+void mousePressed()
 {
   startX = mouseX;
   startY = mouseY;
